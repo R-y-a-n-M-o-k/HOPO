@@ -80,6 +80,7 @@ def get_dms(linear_params, nonlin_eq, powers, coordinate):
         #start with input geometries
         arg = geometries.copy()
         arg[:,:5] = arg[:,:5] - nonlin_eq #geometry relative to equilbrium
+        arg[:,4] = -arg[:,4]
         arg[:,3:] = arg[:,3:] * np.pi/180 #convert deg to rad 
         
         #compute one sum-product term per loop
