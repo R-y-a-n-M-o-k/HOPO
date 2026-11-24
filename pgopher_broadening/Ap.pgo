@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<Mixture Version="PGOPHER 11.0.142 1 Apr 2021 8:30 64 bit Unicode (Delphi 33/33)" AllowComplex="True">
+  <Species Name="Species" Jmax="120">
+    <AsymmetricMolecule Name="AsymmetricTop" PointGroup="Cs">
+      <AsymmetricManifold Name="Ground" Initial="True">
+        <AsymmetricTop Name="v=0">
+          <Parameter Name="A" Value="1.2393"/>
+          <Parameter Name="B" Value="0.3182"/>
+          <Parameter Name="C" Value="0.25387"/>
+          <Parameter Name="DK" Value="2.957E-5"/>
+          <Parameter Name="DJK" Value="-3.98E-6"/>
+          <Parameter Name="DJ" Value="5.87E-7"/>
+          <Parameter Name="deltaK" Value="1.14E-5"/>
+          <Parameter Name="deltaJ" Value="-5.3E-7"/>
+        </AsymmetricTop>
+      </AsymmetricManifold>
+      <AsymmetricManifold Name="Excited">
+        <AsymmetricTop Name="v=1">
+          <Parameter Name="Origin" Value="5000"/>
+          <Parameter Name="A" Value="1.2401"/>
+          <Parameter Name="B" Value="0.31656"/>
+          <Parameter Name="C" Value="0.25236"/>
+          <Parameter Name="DK" Value="3E-5"/>
+          <Parameter Name="DJK" Value="-3.7E-6"/>
+          <Parameter Name="DJ" Value="5.93E-7"/>
+          <Parameter Name="deltaK" Value="1E-5"/>
+          <Parameter Name="deltaJ" Value="-6.9E-7"/>
+        </AsymmetricTop>
+      </AsymmetricManifold>
+      <TransitionMoments Bra="Excited" Ket="Ground">
+        <CartesianTransitionMoment Axis="b" Bra="v=1" Ket="v=0"/>
+      </TransitionMoments>
+    </AsymmetricMolecule>
+  </Species>
+  <Parameter Name="Fmin" Value="4976.70911899079"/>
+  <Parameter Name="Fmax" Value="5020.49644526498"/>
+  <FormSettings Name="ConstantsWindow" ActiveObject="Species: Species"/>
+</Mixture>
